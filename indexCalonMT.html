@@ -1,0 +1,587 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/smash_logo.png" type="image/x-icon">
+    <title>SMASH UPNM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesCalonMT.css">
+</head>
+<body>
+    <!-- Mobile menu button -->
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <!-- Sidebar - DON'T MODIFY THIS AREA -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>SMASH UPNM</h2>
+            <p>Badminton Club</p>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#organization"><i class="fas fa-sitemap"></i> Organization Chart</a></li>
+            <li><a href="#news"><i class="fas fa-newspaper"></i> News & Updates</a></li>
+	    <!-- Add this to the sidebar menu (around line 45) -->
+	    <li><a href="#pencalonan-mt"><i class="fas fa-users"></i> Pencalonan MT</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- Content area - ADD YOUR SECTIONS HERE -->
+    <div class="content">
+<!-- Home section -->
+<section id="home" class="content-section active">
+<div class="home-container">
+    <h2 class="section-title">Welcome to Kelab Badminton UPNM</h2>
+</div>
+    <h4>Where passion for the sport meets camaraderie and active living. We provide a vibrant community for players of all skill levels to play, improve, and connect.</h4>
+    
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="assets/smash_logo.png" alt="SMASH UPNM Logo" class="main-logo">
+    </div>
+    
+    <!-- Features Grid -->
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <h4>Active Community</h4>
+            <p>Join 150+ passionate badminton players</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-trophy"></i>
+            <h4>Competitive Tournaments</h4>
+            <p>Regular competitions and championships</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h4>Weekly Sessions</h4>
+            <p>Regular training and practice matches</p>
+        </div>
+        <!--<div class="feature-card">
+            <i class="fas fa-shuttlecock"></i>
+            <h4>All Skill Levels</h4>
+            <p>From beginners to advanced players</p>
+        </div>-->
+    </div>
+    
+    <!-- Stats Counter -->
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="stat-number" data-count="161">0</div>
+            <div class="stat-label">Active Members</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" data-count="1">0</div>
+            <div class="stat-label">Tournament</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" data-count="2">0</div>
+            <div class="stat-label">Training Camp</div>
+        </div>
+    </div>
+    
+    <!-- Call-to-Action Buttons -->
+    <div class="cta-buttons">
+    	<!--<a href="#application" class="btn primary-btn sidebar-menu-link">Join Now</a>-->
+    	<a href="#news" class="btn secondary-btn sidebar-menu-link">Latest News</a>
+    </div>
+    
+    <!-- Original Step Section -->
+    <!--<div class="step">
+        <h3>How to Add New Content Sections</h3>
+        <p>Follow these steps to add new content without affecting the sidebar:</p>
+        <ol>
+            <li>Add a new menu item in the sidebar (if needed)</li>
+            <li>Create a new content section following the pattern below</li>
+            <li>Test that the navigation works correctly</li>
+        </ol>
+    </div>-->
+</section>
+        
+        
+        <!-- Contact section -->
+<!-- Contact Section -->
+<section id="contact" class="content-section">
+    <div class="contact-container">
+        <h2 class="section-title">Say HELLO!</h2>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Maklumat Perhubungan</h3>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Universiti Pertahanan Nasional Malaysia (UPNM)<br>Kem Perdana Sungai Besi, 57000 K.L</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <div>
+                            <h4>No. Telefon</h4>
+                            <p>+60 11-61225464</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h4>Emel</h4>
+                            <p>smashupnm@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Hubungi Kami di sini!</h3>
+                <form id="helloForm" class="contact-form-element">
+                    <div class="form-group">
+                        <label for="name">Nama Penuh</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Alamat Emel</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">No. Telefon</label>
+                        <input type="tel" id="phone" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Tajuk</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Huraian</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pencalonan MT Section -->
+<section id="pencalonan-mt" class="content-section">
+    <div class="form-header">
+        <h1><i class="fas fa-users"></i> Pencalonan Majlis Tertinggi</h1>
+        <p>Borang pencalonan untuk ahli Majlis Tertinggi SMASH UPNM sesi 2025/2026</p>
+    </div>
+    
+	<div class="step">
+            <h3>Maklumat Penting:</h3>
+            <ul>
+                <li>Pastikan semua maklumat diisi dengan betul dan tepat</li>
+                <li>Borang ini hanya untuk pencalonan Majlis Tertinggi sesi 2025/2026</li>
+                <li>Pastikan anda memenuhi syarat-syarat yang ditetapkan</li>
+                <li>Hubungi kami sekiranya terdapat sebarang masalah</li>
+            </ul>
+        </div>
+
+    <div class="form-container">
+        <div class="google-form-wrapper">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSceeQXbDknv9AFSN9pGrBduvv9CQE1K6VUV8IOrIB1HIKm7CQ/viewform?embedded=true" 
+                width="100%" 
+                height="1200" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"
+                class="responsive-iframe"
+                title="Pencalonan Majlis Tertinggi SMASH UPNM">
+                Loading…
+            </iframe>
+        </div>
+    </div>
+</section>
+        
+        <!-- Organization Chart Section -->
+        <section id="organization" class="content-section">
+<div class="home-container">
+    <h2 class="section-title">Organisation Chart 2025/26</h2>
+</div>
+            <h4>Meet the leadership team that drives our organization forward.</h4>
+            
+            <div class="org-chart-container">
+                <div class="org-chart">
+                    <!-- CEO Level -->
+                    <div class="org-level">
+                        <div class="ceo-card">
+                            <img src="assets/PENASIHAT.jpg" alt="CEO" class="profile-img">
+                            <h3>Puan Nurul Huda Binti Aksho @ Akso</h3>
+                            <p class="position">Penasihat</p>
+                        </div>
+                        <div class="ceo-card">
+                            <img src="assets/PENYELARAS.jpg" alt="CEO" class="profile-img">
+                            <h3>Encik Rizal bin Abu Bakar</h3>
+                            <p class="position">Penyelaras</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Management Level -->
+                    <div class="org-level">
+                        <h4 class="org-level-title">Majlis Tertinggi</h4>
+                        <div class="management-row">
+                            <div class="manager-card">
+                                <img src="assets/.jpg" alt="" class="profile-img">
+				<h4>VACANT</h4>
+                                <!--<h4></h4>-->
+                                <p class="position">Presiden</p>
+                            </div>
+                            <div class="manager-card">
+                                <img src="assets/.jpeg" alt="" class="profile-img">
+				<h4>VACANT</h4>
+                                <!--<h4></h4>-->
+                                <p class="position">Timbalan Presiden</p>
+                            </div>
+                            <div class="manager-card">
+                                <img src="assets/.jpeg" alt="" class="profile-img">
+				<h4>VACANT</h4>
+                                <!--<h4></h4>-->
+                                <p class="position">Setiausaha Agung</p>
+                            </div>
+                            <div class="manager-card">
+                                <img src="assets/.jpeg" alt="" class="profile-img">
+				<h4>VACANT</h4>
+                                <!--<h4></h4>-->
+                                <p class="position">Timbalan Setiausaha Agung</p>
+                            </div>
+                            <div class="manager-card">
+                                <img src="" alt="" class="profile-img">
+				<h4>VACANT</h4>
+                                <!--<h4></h4>-->
+                                <p class="position">Bendahari Kehormat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--<div class="step">
+                <h3>About Our Structure</h3>
+                <p>Our organization follows a hierarchical structure with clear lines of responsibility and leadership.</p>
+                <ul>
+                    <li><strong>Penasihat & Penyelaras:</strong> Provide guidance and coordination</li>
+                    <li><strong>Majlis Tertinggi:</strong> Executive leadership team</li>
+                    <li><strong>Presiden & Timbalan:</strong> Overall leadership and direction</li>
+                    <li><strong>Setiausaha & Bendahari:</strong> Administrative and financial management</li>
+                </ul>
+            </div>-->
+            <div class="step">
+                <h3>Official Members</h3>
+                <!--<p></p>-->
+                
+                <div class="table-container">
+                    <table class="member-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Matric Num.</th>
+                                <th>Full Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+<tr><td>1</td><td>1250021</td><td>HARISHKARTHIK A/L MURALI</td></tr>
+<tr><td>2</td><td>1250044</td><td>MUHAMMAD SABUR BIN MUHAMMAD SIDDIQ</td></tr>
+<tr><td>3</td><td>1250047</td><td>NIVASINI NANTHE GOPAL</td></tr>
+<tr><td>4</td><td>1250101</td><td>AHMAD ZULZIKRY HAIKAL BIN ZA’AHARI</td></tr>
+<tr><td>5</td><td>1250114</td><td>ALIFAH ILYANA BINTI EHSAN</td></tr>
+<tr><td>6</td><td>1250118</td><td>AMIR AMSYAR BIN JALILULAIR</td></tr>
+<tr><td>7</td><td>1250142</td><td>AZIHAH BINTI ABDUL LATIP</td></tr>
+<tr><td>8</td><td>1250174</td><td>FADLIN FARHANA BINTI FA’DZLI IKHWAN</td></tr>
+<tr><td>9</td><td>1250191</td><td>IBNU ALIF BIN MOHD SUKRI</td></tr>
+<tr><td>10</td><td>1250198</td><td>IRDEENA AISYA BINTI MOHD ZAMRI</td></tr>
+<tr><td>11</td><td>1250225</td><td>LUQMAN NUL-HAKIM BIN MOHAMAAD AIDI AMIN</td></tr>
+<tr><td>12</td><td>1250258</td><td>MUHAMAD TAUFIQ HIDAYAT BIN KARIM</td></tr>
+<tr><td>13</td><td>1250323</td><td>MUHAMMAD FARIS AIMAN BIN MOHD FAIZUL ANUAR</td></tr>
+<tr><td>14</td><td>1250361</td><td>MUHAMMAD NAQI HUSAINI BIN YUSRI</td></tr>
+<tr><td>15</td><td>1250405</td><td>NIMISSHA A/P SARAVANAN</td></tr>
+<tr><td>16</td><td>1250429</td><td>NUR ARISSA MAISARAH BINTI HAFIZUL ARIFF</td></tr>
+<tr><td>17</td><td>1250438</td><td>NUR HIDAYAH BINTI HASSIM</td></tr>
+<tr><td>18</td><td>1250445</td><td>NUR NAZIRAH BINTI MUHAMAD NAZRI</td></tr>
+<tr><td>19</td><td>1250446</td><td>NUR QASEH ZADHIRAH BINTI MOHD ZAIPOL</td></tr>
+<tr><td>20</td><td>1250447</td><td>NUR QHAISARA BINTI MOHD ZAKI</td></tr>
+<tr><td>21</td><td>1250462</td><td>NURAFIQAH AINA SOFIYA BINTI ABDUL JEFRI</td></tr>
+<tr><td>22</td><td>1250483</td><td>PUTRA ALIF FAISAL BIN ABD HARIS</td></tr>
+<tr><td>23</td><td>1250511</td><td>SITI AIN SHAH BINTI MOHD DAHRONI</td></tr>
+<tr><td>24</td><td>1250539</td><td>WAN NUR AMIERA SYAMIMIE BINTI WAN RAHIM</td></tr>
+<tr><td>25</td><td>1250540</td><td>WAN NUR IMANINA BINTI WAN IKHWAN MUHAMMAD</td></tr>
+<tr><td>26</td><td>1250551</td><td>ADAM FIRDAUS BIN ABD AZIZ</td></tr>
+<tr><td>27</td><td>1250581</td><td>AWENASH KUMAR A/L SATHIS KUMAR</td></tr>
+<tr><td>28</td><td>1250593</td><td>FATINI AFIQAH BINTI FAIRUL RIZAL</td></tr>
+<tr><td>29</td><td>1250598</td><td>HAFEIY ZIKRULLAH BIN SHAMSHOR</td></tr>
+<tr><td>30</td><td>1250599</td><td>HARITH AEIZUDIN BIN ITHNIN</td></tr>
+<tr><td>31</td><td>1250608</td><td>JOHN PROPHET A/L MOHAN KUMAR</td></tr>
+<tr><td>32</td><td>1250621</td><td>MOHAMAD ALI IMRAN BIN MOHD AL FARID</td></tr>
+<tr><td>33</td><td>1250749</td><td>NURFATIHAH BINTI MOHD KASSIM</td></tr>
+<tr><td>34</td><td>1250756</td><td>NURRIS ALYA BINTI ZULKAFLE</td></tr>
+<tr><td>35</td><td>1250760</td><td>NURUL ATIQAH SUMAIYAH BINTI MOHD NOOR IKHSAN</td></tr>
+<tr><td>36</td><td>1250793</td><td>SYAFIQ AZRIN BIN HAZRUL NAZRIN</td></tr>
+<tr><td>37</td><td>1250804</td><td>WAN NUR AUNI BINTI WAN ADNAN</td></tr>
+<tr><td>38</td><td>1250812</td><td>ZULAIKHA AYU NAJWA BINTI ZAKARIA</td></tr>
+<tr><td>39</td><td>1250824</td><td>JITHINDRA A/L RAMAIS</td></tr>
+<tr><td>40</td><td>1250847</td><td>SABARISH BRYANT ARUNASALAM</td></tr>
+<tr><td>41</td><td>1250851</td><td>MUHAMMAD AQIL MIRZA BIN MOHD RADZI</td></tr>
+<tr><td>42</td><td>7250043</td><td>NORLIANA BINTI RIZAL</td></tr>
+<tr><td>43</td><td>7250081</td><td>AIMAN NAIM BIN MOHD KHAIR</td></tr>
+<tr><td>44</td><td>7250085</td><td>AMIR ZAKWAN BIN SUHAIMI</td></tr>
+<tr><td>45</td><td>7250134</td><td>MUHAMMAD HAIKAL BIN MOHD SAIFUL AZHAR</td></tr>
+<tr><td>46</td><td>7250142</td><td>MUHAMMAD THAQIF BIN AZLI</td></tr>
+<tr><td>47</td><td>7250143</td><td>MUHAMMAD ZAIM MUMTAZ BIN MAT KHOSIM</td></tr>
+<tr><td>48</td><td>7250224</td><td>MUHAMMAD HAZIQ BIN KHAIRUL ANUAR</td></tr>
+<tr><td>49</td><td>7250232</td><td>MUHAMMAD NURHIDAYAT BIN MOHD GHAZALI</td></tr>
+<tr><td>50</td><td>7250243</td><td>NUR AMIRA NATASYA BINTI MOHD SYUHAIRY</td></tr>
+<tr><td>51</td><td>7250247</td><td>NUR AZLEEN BINTI LIMAT</td></tr>
+<tr><td>52</td><td>7250256</td><td>NUR KHALISH ADHA BIN KAMARUL HALIM</td></tr>
+<tr><td>53</td><td>7250262</td><td>NURUL FATIHAH BINTI MAHADI</td></tr>
+<tr><td>54</td><td>7250272</td><td>RAFFI ASMIDA DANIA BINTI RAFFI ASMADI</td></tr>
+<tr><td>55</td><td>7250276</td><td>SITI NOR AINA SOFEA BINTI MARZUKI</td></tr>
+<tr><td>56</td><td>7250277</td><td>SRI NUR INSYIRAH BT MOHAMMAD MAZLAN</td></tr>
+<tr><td>57</td><td>7250286</td><td>ADY PUTRA BIN MOHD NADHIRIN</td></tr>
+<tr><td>58</td><td>7250294</td><td>DARWISY BAHIR BIN ALIF</td></tr>
+<tr><td>59</td><td>7250299</td><td>MUHAMMAD AKMAL NAJMI BIN KHAIRUDIN</td></tr>
+<tr><td>60</td><td>7250308</td><td>MUHAMMAD NABIL ASYRAF BIN MOHD MUHASA'AH</td></tr>
+<tr><td>61</td><td>7250321</td><td>NUR UMAIRAH BINTI AZRUL AZMIR</td></tr>
+<tr><td>62</td><td>7250329</td><td>KAVINESWARY A/P RAJANTIRAN</td></tr>
+<tr><td>63</td><td>1250188</td><td>HARENDRAH A/L DESINGU</td></tr>
+<tr><td>64</td><td>1250247</td><td>MOHAMMAD WALDAN DANISH BIN MOHD ASWAD</td></tr>
+<tr><td>65</td><td>1250251</td><td>MUHAMAD AIMAN BIN CHE MAZNI</td></tr>
+<tr><td>66</td><td>1250408</td><td>NUHA BAZILAH BINTI AL AZIZI</td></tr>
+<tr><td>67</td><td>1250431</td><td>NUR ATIKAH BINTI AHMAD FAIZAL</td></tr>
+<tr><td>68</td><td>1250657</td><td>MUHAMMAD FALIKH AMRI BIN MOHD FAZLAN</td></tr>
+<tr><td>69</td><td>1250672</td><td>MUHAMMAD HAZIQ BIN HANAS</td></tr>
+<tr><td>70</td><td>1250871</td><td>VICKNESH SEGARAN A/L RAJA SEGARAN</td></tr>
+<tr><td>71</td><td>1250953</td><td>CHAN TING ERN</td></tr>
+<tr><td>72</td><td>1250979</td><td>DANUSH A/L JEGANATHAN</td></tr>
+<tr><td>73</td><td>1250989</td><td>DIYANA NATASYA BINTI DZULKIFLI</td></tr>
+<tr><td>74</td><td>1251063</td><td>KOH KEAN WEN</td></tr>
+<tr><td>75</td><td>1251071</td><td>LEE HUI TONG</td></tr>
+<tr><td>76</td><td>1251344</td><td>QARMIELA SEPHIA BINTI AGUSMAN</td></tr>
+<tr><td>77</td><td>1251345</td><td>QASEH IRIN BINTI AZMAN</td></tr>
+<tr><td>78</td><td>1251346</td><td>QASEH UMAIRAH BINTI ZUKI</td></tr>
+<tr><td>79</td><td>1251370</td><td>SHWETA LAXMI A/P SUBRAMANIAM</td></tr>
+<tr><td>80</td><td>1251460</td><td>CHOCO LOW</td></tr>
+<tr><td>81</td><td>1251482</td><td>GOH LOK JANE</td></tr>
+<tr><td>82</td><td>1251484</td><td>HEW ZHE YING</td></tr>
+<tr><td>83</td><td>1251629</td><td>SITI AMINAH BINTI MOHD AMIN</td></tr>
+<tr><td>84</td><td>1251639</td><td>AMIR ZAKWAN BIN SUHAIMI</td></tr>
+<tr><td>85</td><td>2220061</td><td>WONG YE HENG</td></tr>
+<tr><td>86</td><td>2220161</td><td>NG YAW PIN</td></tr>
+<tr><td>87</td><td>2230078</td><td>YUWARAAJ A/L PONNUSAMY</td></tr>
+<tr><td>88</td><td>2230168</td><td>NIK NUR SA'ADAH BINTI NIK AIDI</td></tr>
+<tr><td>89</td><td>2230631</td><td>7547941 AMEERSHAM BIN MOHD NAZRI</td></tr>
+<tr><td>90</td><td>2230833</td><td>NV/8709385 MUHAMMAD FUDAIL IRFAN BIN MUZAMMIR</td></tr>
+<tr><td>91</td><td>2240077</td><td>SITI NOR AISYAH BINTI ABDULLAH</td></tr>
+<tr><td>92</td><td>2240134</td><td>WAN AHMAD AFIF BIN WAN MUSTAPHA</td></tr>
+<tr><td>93</td><td>2240217</td><td>NUR AMIRAH MIRZA BINTI IBRAHIM</td></tr>
+<tr><td>94</td><td>2240296</td><td>MUHAMMAD NUR EIZWAN BIN BAHARUDIN</td></tr>
+<tr><td>95</td><td>2240357</td><td>NV/8710203 MUHAMMAD DARWISH ASHRAF BIN MUHD RIDZMAN</td></tr>
+<tr><td>96</td><td>2240413</td><td>TUAN HAMIZAN SYAZWAN BIN HAZLI</td></tr>
+<tr><td>97</td><td>2240415</td><td>VESHAALAN KUMAR</td></tr>
+<tr><td>98</td><td>2240503</td><td>ALLYSHA HAZIQA BINTI HISHAMUDDIN</td></tr>
+<tr><td>99</td><td>2240569</td><td>NUR ALEEZA BINTI AZMY</td></tr>
+<tr><td>100</td><td>2240571</td><td>NUR AMNAH NAFISAH BINTI ARIFIN</td></tr>
+<tr><td>101</td><td>2240601</td><td>7806638 NUR DINI AYUNI BINTI JAFRY DIN</td></tr>
+<tr><td>102</td><td>2240618</td><td>KHOR XUE LING</td></tr>
+<tr><td>103</td><td>2240713</td><td>3017906 SYED AKMAL RIDZUAN BIN SYED AZMI</td></tr>
+<tr><td>104</td><td>2240719</td><td>7549697 MUHAMMAD IRFAN NAIM BIN AMINUDDIN</td></tr>
+<tr><td>105</td><td>2240887</td><td>MEESHAJIT KAUR A/P HARCHARANJIT SINGH</td></tr>
+<tr><td>106</td><td>2240917</td><td>SITI FAIRUS BINTI SEHAK</td></tr>
+<tr><td>107</td><td>2241070</td><td>ALIFF DANIAL AL-HADI BIN AHMAD KHARIRI AL-HADI</td></tr>
+<tr><td>108</td><td>2250053</td><td>ULFA BINTI FADZLAN SHAHIDI</td></tr>
+<tr><td>109</td><td>2250285</td><td>ANIS QISTINA BT MD KHAIR</td></tr>
+<tr><td>110</td><td>2250322</td><td>NG ZHI YEE</td></tr>
+<tr><td>111</td><td>2250505</td><td>NUR BATRISYIA HANNAH BINTI MOHD AZHAR</td></tr>
+<tr><td>112</td><td>2250508</td><td>NUR IRDHINA KHAIRI</td></tr>
+<tr><td>113</td><td>2250785</td><td>ANIESSA SIVAKUMAR</td></tr>
+<tr><td>114</td><td>2251005</td><td>YANGNURAISHAKINAH BINTI ROSLEE</td></tr>
+<tr><td>115</td><td>2251103</td><td>SITI NORSHAHIRA BINTI ROSLI</td></tr>
+<tr><td>116</td><td>2251172</td><td>MUHAMMAD IMAN ARIF BIN YUSRI</td></tr>
+<tr><td>117</td><td>2251340</td><td>SITI NOR ANTASHA BINTI TAN MUHAMMAD FUA'AD</td></tr>
+<tr><td>118</td><td>2251348</td><td>SYAZADINI ATIQAH BINTI MOHD SHAHRIL</td></tr>
+<tr><td>119</td><td>2251425</td><td>NOR ARFAN BIN NORAZROL</td></tr>
+<tr><td>120</td><td>2251446</td><td>NURHAYATY BINTI ABDUL MUTALIB</td></tr>
+<tr><td>121</td><td>2251466</td><td>SYAMSUL NIZAM BIN FADZIL</td></tr>
+<tr><td>122</td><td>2251468</td><td>UMAR BIN MALADY @ ZULKIFLI</td></tr>
+<tr><td>123</td><td>2251537</td><td>NUR ASMA' BINTI OMAR</td></tr>
+<tr><td>124</td><td>2251538</td><td>NUR HAZWANI BINTI HASHIM</td></tr>
+<tr><td>125</td><td>2251540</td><td>NUR HUZAIFAH HUDA BINTI MD ARIS</td></tr>
+<tr><td>126</td><td>2251542</td><td>NURBANIN HUMAIRA BINTI NORAZMAN</td></tr>
+<tr><td>127</td><td>2251558</td><td>ANGGUN NADHILAH BINTI ABD</td></tr>
+<tr><td>128</td><td>2251627</td><td>NORMIRA BINTI L.OSMAN</td></tr>
+<tr><td>129</td><td>2251654</td><td>SITI NUR NATASYA BINTI MD AKHIR</td></tr>
+<tr><td>130</td><td>2251657</td><td>SYAZA NURQASRINA BINTI SYARUL NIZAM</td></tr>
+<tr><td>131</td><td>2251735</td><td>NUR ANIS AMEERA BINTI MOHD ASRI</td></tr>
+<tr><td>132</td><td>7240327</td><td>IVAN CHONG ZHE WEI</td></tr>
+<tr><td>133</td><td>7240399</td><td>NUR AQILAH BINTI MOHAMAD ‘ASRI</td></tr>
+<tr><td>134</td><td>7250084</td><td>ALYA DANIA BINTI NOOR KHAIRI</td></tr>
+<tr><td>135</td><td>7250086</td><td>ARISHA HANI BINTI AZMI</td></tr>
+<tr><td>136</td><td>7250380</td><td>MUHAMMAD EMAN EMER BIN SHAHARUDIN</td></tr>
+<tr><td>137</td><td>7250428</td><td>MOHAMAD HARITH HAZIQ BIN ABDULLAH</td></tr>
+<tr><td>138</td><td>7250469</td><td>MUHAMMAD NAJWAN BIN MOHD GHAZALI</td></tr>
+<tr><td>139</td><td>2240750</td><td>AHMAD LUQMAN BIN ROSLI</td></tr>
+<tr><td>140</td><td>7240100</td><td>PUTRI LYANA ATHIRAH BINTI MOHD NAZERIY</td></tr>
+<tr><td>141</td><td>2240204</td><td>MUHAMMAD AKMAL BIN MOHD HILMI</td></tr>
+<tr><td>142</td><td>2240951</td><td>MUHAMMAD ASHRUL BIN YUSRIZAM</td></tr>
+<tr><td>143</td><td>2240196</td><td>DANISH EMMIR BIN SAIFUL ZAHRY</td></tr>
+<tr><td>144</td><td>2240082</td><td>AZRYL ANNUAR BIN NORAMIN</td></tr>
+<tr><td>145</td><td>7240102</td><td>REENA JEYSRI KALAIARASAN</td></tr>
+<tr><td>146</td><td>2240788</td><td>AMAR HABIB AL-AJMI BIN HAMIDUN</td></tr>
+<tr><td>147</td><td>2230810</td><td>RANI HAZWANI BINTI HAFIZI</td></tr>
+<tr><td>148</td><td>2241076</td><td>NORLEN BINTI OTHMAN</td></tr>
+<tr><td>149</td><td>7240266</td><td>NURUL AMIRAH BINTI NORRIMI</td></tr>
+<tr><td>150</td><td>2240409</td><td>MUHAMMAD THAQIF DHIYAULHAQ BIN ZULHISHAM</td></tr>
+<tr><td>151</td><td>2240742</td><td>MUHAMMAD AFIQ BIN SALLEH</td></tr>
+<tr><td>152</td><td>2240554</td><td>MUHAMMAD IRFAN PUTRA BIN MUHAMMAD AZAMIN</td></tr>
+<tr><td>153</td><td>2240224</td><td>MUHAMMAD TAUFIQ BIN ROSDAN</td></tr>
+<tr><td>154</td><td>2240629</td><td>MUHAMMAD ALIF IMRAN BIN RASHID</td></tr>
+<tr><td>155</td><td>2241073</td><td>LAILATI BINTI MOHD</td></tr>
+<tr><td>156</td><td>2240232</td><td>AMIRA BINTI ASRI</td></tr>
+<tr><td>157</td><td>2241004</td><td>SUVANESH A/L PRAKESH</td></tr>
+<tr><td>158</td><td>2240487</td><td>SITI QISTINA SYAKIRAH BINTI NAZRON</td></tr>
+<tr><td>159</td><td>2230137</td><td>YAP HAO YANG</td></tr>
+<tr><td>160</td><td>2240755</td><td>MUHAMMAD IQBAL DANIAL BIN MOHD ZUKRI</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="content-section">
+            <div class="news-container">
+                <h2 class="section-title">Our News</h2>
+                
+                <div class="news-grid">
+                    <!-- Featured News (Latest) -->
+                    <div class="news-card">
+                        <img src="assets/MK2526.png" alt="News Image" class="news-img">
+                        <div class="news-content">
+                            <p class="news-date">16 Julai 2025</p>
+                            <h3 class="news-title">Pendaftaran Keahlian Asasi Diploma 25/26</h3>
+                            <p class="news-excerpt">Ayuh sertai kami! Jadillah pemain Badminton yang hebat dan memberi manfaat kepada semua ahli komuniti.</p>
+                            <!--<a href="" class="btn">Mohon Sekarang!</a>-->
+                        </div>
+                    </div>
+                    
+                    <!-- Recent News -->
+                    <div class="news-card">
+                        <img src="assets/FSC1.png" alt="News Image" class="news-img">
+                        <div class="news-content">
+                            <p class="news-date">10 Mei 2025</p>
+                            <h3 class="news-title">Fly Smash Championship</h3>
+                            <p class="news-excerpt">Kejohanan sulong peringkat UPNM yang melibatkan semua pelajar daripada pelbagai Fakulti. Sebanyak 8 pasukan menyertai kejohanan ini dan terdapat 5 kategori yang dipertandingkan.</p>
+                            <a href="http://tinyurl.com/officialFSC" class="btn">Read More</a>
+                        </div>
+                    </div>
+  
+                    <!-- Older News -->
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="News Image" class="news-img">
+                        <div class="news-content">
+                            <p class="news-date">18 November 2024</p>
+                            <h3 class="news-title">Mesyuarat Agung Tahunan</h3>
+                            <p class="news-excerpt">Kelab Badminton UPNM telah berjaya mengadakan Mesyuarat Agung Tahunan (AGM) dengan penuh semangat, memperkukuh barisan kepimpinan dan merancang hala tuju baharu kelab.</p>
+                            <a href="" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <h3>Stay Updated</h3>
+                <p>Follow our latest news and announcements to stay informed about club activities, tournaments, and membership opportunities. We regularly post updates about:</p>
+                <ul>
+                    <li><strong>Tournaments & Championships:</strong> Upcoming competitions and results</li>
+                    <li><strong>Membership Drives:</strong> Opportunities to join our community</li>
+                    <li><strong>Club Events:</strong> Meetings, training sessions, and social gatherings</li>
+                    <li><strong>Achievements:</strong> Success stories from our members</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+<!-- Announcement Modal -->
+<div id="announcementModal" class="modal" style="display: flex;">
+    <div class="modal-content announcement-modal">
+        <div class="announcement-header">
+            <h2><i class="fas fa-bullhorn"></i> Pengumuman Penting</h2>
+            <button id="closeAnnouncement" class="close-btn">&times;</button>
+        </div>
+        <div class="announcement-body">
+            <div class="announcement-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <h3>Pengambilan Keahlian Edisi ke-2 Telah Ditutup</h3>
+            <p>Permohonan keahlian edisi ke-2 Kelab Badminton UPNM telah ditutup. Sila ikuti perkembangan kami untuk maklumat pembukaan permohonan pada sesi akan datang.</p>
+            <p>Terima kasih atas minat anda.</p>
+        </div>
+        <div class="announcement-footer">
+            <button id="confirmAnnouncement" class="btn modal-button">Saya Faham</button>
+        </div>
+    </div>
+</div>
+
+    <script src="scriptCalonMT.js"></script>
+
+<script>
+// Simple loading state test
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('applicationForm');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-button');
+            console.log('Button clicked - current state:', submitBtn.innerHTML);
+            
+            // Store original state
+            const originalText = submitBtn.innerHTML;
+            const originalBg = submitBtn.style.backgroundColor;
+            
+            // Change to loading state
+            submitBtn.disabled = true;
+            submitBtn.style.backgroundColor = '#95a5a6';
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Menghantar...';
+            
+            console.log('Button changed to loading state');
+            
+            // Test if styles are applied
+            console.log('Button background color:', submitBtn.style.backgroundColor);
+            console.log('Button HTML:', submitBtn.innerHTML);
+            
+            // Simulate form submission
+            setTimeout(() => {
+                document.getElementById('successModal').style.display = 'flex';
+                
+                // Reset button after 2 seconds
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.style.backgroundColor = originalBg;
+                    submitBtn.innerHTML = originalText;
+                    console.log('Button reset to original state');
+                }, 2000);
+            }, 3000);
+        });
+    } else {
+        console.error('Application form not found!');
+    }
+});
+</script>
+</body>
+</html>
